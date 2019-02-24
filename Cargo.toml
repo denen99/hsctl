@@ -1,0 +1,15 @@
+[package]
+name = "hsctl"
+version = "0.1.0"
+authors = ["denen99"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.5"
+base64 = "0.10.0"
+clap = "2.32.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+prettytable-rs = "^0.8"
+dirs = "1.0.4"
