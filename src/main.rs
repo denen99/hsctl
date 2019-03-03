@@ -42,7 +42,7 @@ fn main() {
                 .required(false)
                 .default_value("https://connected11.homeseer.com"),
         )
-        .subcommand(SubCommand::with_name("test").about("Testme"))
+
         .subcommand(
             SubCommand::with_name("status")
                 .arg(
@@ -94,7 +94,8 @@ fn main() {
                         .conflicts_with("label")
                         .required(false)
                         .takes_value(true),
-                ),
+                )
+                .about("Control devices by label or by value"),
         )
         .subcommand(
             SubCommand::with_name("login")
