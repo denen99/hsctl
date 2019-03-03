@@ -1,7 +1,3 @@
-// use std::env;
-// use std::io;
-// use std::io::prelude::*;
-
 extern crate clap;
 #[macro_use]
 extern crate prettytable;
@@ -17,9 +13,6 @@ mod output;
 mod types;
 
 fn main() {
-    // let args: Vec<String> = env::args().collect();
-
-    // let p = types::DeviceApi::NoAPI;
 
     let matches = App::new("hsctl")
         .about("A CLI tool for interacting with HomeSeer")
@@ -217,6 +210,4 @@ fn main() {
         _ => println!("{}", help),
     }
 
-    // let a1 = &args[1];
-    // let a2 = &args[2];
 }
