@@ -10,7 +10,6 @@ mod api;
 mod device;
 mod http;
 mod output;
-mod types;
 
 fn main() {
 
